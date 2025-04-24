@@ -26,6 +26,10 @@ int main() {
     int length;
     bool digits, symbols;
 
+    if (length < 6) {
+        cout << "Пароль должен быть не короче 6 символов!" << endl;
+        return 1;
+    }
     cout << "Длина пароля: ";
     cin >> length;
     cout << "Цифры (1/0): ";
