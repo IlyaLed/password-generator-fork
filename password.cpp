@@ -27,18 +27,18 @@ int main() {
     bool digits, symbols;
 
     if (length < 6) {
-        cout << "Пароль должен быть не короче 6 символов!" << endl;
+        cout << "Password must be at least 6 characters long!" << endl;
         return 1;
     }
-    cout << "Длина пароля: ";
+    cout << "Password length: ";
     cin >> length;
-    cout << "Цифры (1/0): ";
+    cout << "Digits (1/0): ";
     cin >> digits;
-    cout << "Спецсимволы (1/0): ";
+    cout << "Symbols (1/0): ";
     cin >> symbols;
 
     string password = generatePassword(length, digits, symbols);
-    cout << "Ваш пароль: " << password << endl;
+    cout << "Your password: " << password << endl;
 
     return 0;
 }
